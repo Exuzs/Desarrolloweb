@@ -1,0 +1,10 @@
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    cedula VARCHAR(20),
+    email VARCHAR(100),
+    username VARCHAR(50) UNIQUE,
+    password VARCHAR(100)
+);
+
+cambiar datos de la conexión segun sea necesario 

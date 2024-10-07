@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título principal, aparecerá en la parte superior al superponer el mouse en la pestaña-->
+	<title>FastWheels: Catálogo</title>
+
+    <!-- Se define el logo que tomará la página en el apartado de despetaña-->
+    <link rel="icon" type="image/png" href="/images/logoFastWheels.png">
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet"> 
+
+</head>
+<body>  
+        <!--Comente toda esta barra de navegación porque la considero obsoleta con mis aportes-->
+        <!-- <nav>
+            <div class="nav-wrapper" style="background-color: #530c0c;">
+                <img src="bande.png" alt="" height="100%" width="5%">
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a class="active" href="login.html">LOGIN</a></li>
+                <li> <a href="registro.html">REGISTRO</a></li>
+                <li><a href="catalogo.html">CATALOGO</a></li>
+                <li> <a href="confirmacion.html">CONFIRMACION</a></li>
+              </ul>
+            </div>
+          </nav> -->
+
+          <!--Reutilizó la barra de navegación que ya había hecho antes-->
+          <nav class="headernav" id="headnav" style="background-color: red;">
+            <!--Acá lo que hacemos es linkear las paginas que habían hecho los compañeros-->
+            <ul>
+                <li class="active"><a href="/index.html">Home</a></li>
+                <li><a href="/html/login.html">Login</a></li>
+                <li><a href="/html/catalogo.html">Catálogo</a></li>
+		
+                <!--Estos dos apartados se llaman por etiqueta ya que están dentro del mismo index-->
+                <li><a href="#features">Especificaciones</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <div class="catalog-container" >
+        <h2 class="letra" style="font-family:'Audiowide', sans-serif;">CATALOGO DE AUTOS DEPORTIVOS</h2>
+        <img src="/images/log.png" alt="" width="70%">
+        <div class="product">
+            <img src="/images/carro1.png" alt="Toyota Supra mk4">
+            <h3>Toyota Supra mk4</h3>
+            <p>$100,000,000</p>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="/images/carro2.png" alt="Nissan Skyline R34">
+            <h3>Nissan Skyline R34</h3>
+            <p>$150,000,000</p>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="/images/carro3.png" alt="Mitsubishi Eclipse">
+            <h3>Mitsubishi Eclipse</h3>
+            <p>$200,000,000</p>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="/images/impala.png" alt="Impala">
+            <h3>Impala</h3>
+            <p>$250,000,000</p>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="/images/BMW.png" alt="Bmw">
+            <h3>Bmw</h3>
+            <p>$300,000,000</p>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="/images/camaro.png" alt="Mustang">
+            <h3>Mustang</h3>
+            <p>$200,000,000</p>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="/images/audi.png" alt="Audi">
+            <h3>Audi R8</h3>
+            <p>$350,000,000</p>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="/images/chevrolet.png" alt="Chevrolet">
+            <h3>Chevrolet SS</h3>
+            <p>$400,000,000</p>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="/images/f1.png" alt="F1">
+            <h3>F1</h3>
+            <p>$450,000,000</p>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="/images/mc.png" alt="Mc">
+            <h3>McLaren</h3>
+            <p>$500,000,000</p>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="/images/rolls royce.png" alt="Rolls Royce">
+            <h3>Rolls Royce</h3>
+            <p>$550,000,000</p>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="/images/bugatti.png" alt="Bugatti">
+            <h3>Bugatti</h3>
+            <p>$600,000,000</p>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="/images/koenigsegg.png" alt="koenigsegg">
+            <h3>koenigsegg</h3>
+            <p>$650,000,000</p>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="/images/maserati.png" alt="maserati">
+            <h3>Maserati</h3>
+            <p>$700,000,000</p>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="/images/lambo.png" alt="lambo">
+            <h3>Lamborghini</h3>
+            <p>$200,000</p>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+
+        
+    </div>
+    
+
+    <script>
+        function comprar() {
+            alert("Producto añadido al carrito");
+            window.location.href = '/html/confirmacion.html';
+        }
+    </script>
+</body>
+</html>

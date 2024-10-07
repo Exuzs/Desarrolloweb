@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Dado que los compañeros no plantearon una homepage, mi aporte será hacer una y, sin modificar, agregar
+    los demás aportes realizados por el grupo-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Título principal, aparecerá en la parte superior al superponer el mouse en la pestaña-->
+		<title>FastWheels: Catálogo de Autos Deportivos</title>
+
+    <!-- Se define el logo que tomará la página en el apartado de despetaña-->
+		<link rel="icon" type="image/png" href="images/logoFastWheels.png">
+
+    <!--Linkeamos styles de css, para no cambiar los aportes de los compañeros linkeo una página exclusiva
+        para esta página de home-->
+    <link rel="stylesheet" href="css/stylesForHomePage.css">
+
+</head>
+<!--/HEAD-->
+
+<body>
+  <!--Header-->  
+    <header>
+        <div class="container">
+            <div class="headercontent">
+
+                <a href="#" class="logo">
+                    <img src="images/logoFastWheels.png" alt="FastWheels" />
+                </a>
+
+                <div class="menuicons" style="display:none;">
+                    <a href="javascript:void();" class="shownav">
+                        <span class="fa-solid fa-bars"></span>
+                    </a>
+                    <a href="javascript:void();" class="hidenav" style="display:none;">
+                        <span class="fa-solid fa-times"></span>
+                    </a>
+                </div>
+
+                <!--Definimos el nombre y le damos un id para aplicarle un estilo diferente al general de css-->
+                <h3 id="unique-h3">FASTWHEELS</h3>
+
+                <!--Listado de barra superior-->
+                <nav class="headernav" id="headnav">
+                    <!--Acá lo que hacemos es linkear las paginas que habían hecho los compañeros-->
+                    <ul>
+                        <li class="active"><a href="/index.html">Home</a></li>
+                        <li><a href="html/login.html">Login</a></li>
+                        <li><a href="html/catalogo.html">Catálogo</a></li>
+                        <li><a href="#conocenos">Conocenos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+    <!--/HEADER-->
+
+    <!--Carrusel-->
+    <div class="carrusel">
+        <div class="carrusel-images">
+            <img src="images/carrusel/car1.jpg" alt="carruselImagen1">
+            <img src="images/carrusel/car2.jpg" alt="carruselImagen2">
+            <img src="images/carrusel/car3.jpg" alt="carruselImagen3">
+            <img src="images/carrusel/car4.jpg" alt="carruselImagen4">
+        </div>
+        <button class="carrusel-control prev">❮</button>
+        <button class="carrusel-control next">❯</button>
+    </div>
+    <!--/Carrusel-->
+
+
+    
+
+    <!--Adjuntamos el script de js-->
+    <script src="js/script.js"></script>
+</body>
+</html>

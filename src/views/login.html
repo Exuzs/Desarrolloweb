@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Login</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2 class="letra" style="font-family:'Audiowide', sans-serif;">INICIAR SESIÓN</h2>
+        
+        <center> 
+            <img src="/images/logoFastWheels.png" alt="FastWheels" width="50%"> 
+        </center>
+        
+        <form id="loginForm" action="/user/login" method="POST">
+            <input type="text" id="username" name="newUsername" placeholder="Nombre de usuario" required>
+            <input type="password" id="password" name="newPassword" placeholder="Contraseña" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        <p>¿No tienes una cuenta? <a href="/html/registro.html">Regístrate aquí</a></p>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username === "" || password === "") {
+                e.preventDefault(); // Evita el envío del formulario si hay campos vacíos.
+                alert("Por favor, completa todos los campos.");
+            }
+        });
+    </script>
+</body>
+</html>

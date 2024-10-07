@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Registro</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="register-container">
+        <h2 class="letra" style="font-family:'Audiowide', sans-serif;">REGISTRO DE USUARIO</h2>
+        <form action="/user/register" method="POST">
+            <input type="text" id="name" name="name" placeholder="Nombre" required>
+            <input type="text" id="cedula" name="cedula" placeholder="Cédula" required>
+            <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+            <input type="text" id="newUsername" name="newUsername" placeholder="Nombre de usuario" required>
+            <input type="password" id="newPassword" name="newPassword" placeholder="Contraseña" required>
+            <button type="submit">Registrarse</button>
+        </form>
+        <p>¿Ya tienes una cuenta? <a href="/html/login.html">Inicia sesión aquí</a></p>
+    </div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            const name = document.getElementById('name').value;
+            const cedula = document.getElementById('cedula').value;
+            const email = document.getElementById('email').value;
+            const newUsername = document.getElementById('newUsername').value;
+            const newPassword = document.getElementById('newPassword').value;
+
+            if (name === "" || cedula === "" || email === "" || newUsername === "" || newPassword === "") {
+                e.preventDefault(); // Evita el envío del formulario si hay campos vacíos.
+                alert("Por favor, completa todos los campos.");
+            }
+        });
+    </script>
+</body>
+</html>
